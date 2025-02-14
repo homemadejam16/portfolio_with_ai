@@ -4,10 +4,6 @@ import streamlit as st
 
 
 def show_page():
-    st.title("About Me")
-    st.write("I'm Hongmei, a passionate Machine Learning and AI engineer.")
-
-
 
     # Function to load a JSON file
     with open(r'data/technical_skills.json') as file:
