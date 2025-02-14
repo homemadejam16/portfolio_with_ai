@@ -1,23 +1,20 @@
+import streamlit as st
 
-st.title("Education")
-st.write(
-    """
-    ### Sikkim Maniapal Institute of Technology, India
-    - **Bachelor of Technology (B.Tech) in Computer Science and Engineering**
-    - **Duration:** 2020 - 2024
-    """
-)
-st.write(
-    """
-    ### Sri Chaitanya Educational Institute, India
-    - **Junior College**
-    - **Duration:** 2017 - 2019
-    """
-)
-st.write(
-    """
-    ### Notre Dame Academy, India	
-    - **High School**
-    - **Duration:** 2015 - 2017
-    """
-)
+
+def show_page():
+    st.title("Education")
+    st.write(
+        """
+        ### George Mason University
+        - **Bachelor of Science in Bioengineering**
+        - **Duration:** 2021 - present
+        """
+    )
+    st.write(
+        """
+        ### The China Three Gorges University
+        - **Bachelor of management in Information System and Information Management**
+        - **Duration:** 2000 - 2004
+        """
+    )
+    
