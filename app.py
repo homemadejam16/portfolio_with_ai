@@ -2,6 +2,7 @@ import streamlit as st
 from streamlit_option_menu import option_menu
 import importlib
 
+
 # Page configuration
 st.set_page_config(
     page_title="Hongmei's Portfolio",
@@ -20,7 +21,7 @@ with st.sidebar:
             "Experience",
             "Technical Skills",
             "Education",
-            "Achievement"
+            "Certifications"
             "Projects",
             "Contact",
         ],
@@ -37,7 +38,7 @@ with st.sidebar:
         menu_icon="mortarboard",
         default_index=0,
         styles={
-            "container": {"padding": "0!important", "background-color": "#0D1117"},
+            "container": {"padding": "0!important", "background-color": "#48AAAD"},
             "icon": {"color": "darkorange", "font-size": "20px"},
             "nav-link": {
                 "font-size": "17px",
@@ -64,13 +65,13 @@ with st.sidebar:
 # Map selection to modules
 pages = {
     "Lucy": "subpages.home",
-    "About Me": "subpages.About_Me",
-    "Experience": "subpages.Experience",
+    "About Me": "subpages.about_me",
+    "Experience": "subpages.experience",
     "Technical Skills": "subpages.technical_skills",
-    "Education": "subpages.Education",
-    "Projects": "subpages.Projects",
-    "Achivements": "subpages.Achivements",
-    "Contact": "subpages.Contact",
+    "Education": "subpages.education",
+    "Certifications": "subpages.certifications",
+    "Projects": "subpages.projects",
+    "Contact": "subpages.contact",
 }
 
 # Dynamically load and display the selected page
@@ -78,5 +79,3 @@ page_module = pages.get(choose)
 if page_module:
     module = importlib.import_module(page_module)
     module.show_page()
-
-
