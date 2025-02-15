@@ -2,7 +2,7 @@ import streamlit as st
 
 
 def show_page():
-    st.header(":mailbox: Get In Touch With Me!")
+    st.header(":mailbox: Welcome to Contact With Me!")
 
 
     contact_form = """
